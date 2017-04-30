@@ -2,3 +2,20 @@
 /* ==========================================================================
    Mise en forme générale MOBILE FIRST
    ========================================================================== */
+
+
+      @font-face {
+      	font-family: "ombeline";
+      	src: url('../font/ombeline/Ombeline.ttf');
+      }
+
+      @font-face {
+      	font-family: "marchand";
+      	font-style: italic;
+      	src: url('../font/marchand/Marchand_Italic.ttf');
+      }
+
+      @font-face {
+       font-family: "marchand";
+       src: url('../font/marchand/Marchand.ttf');
+      }

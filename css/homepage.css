@@ -7,7 +7,8 @@
    Rouge : #E10117
    blanc
    noir
-   Gris foncé : #7B7A7A7
+   Gris foncé : #514f4f
+   #383434
 
    ========================================================================== */
 
@@ -62,7 +63,7 @@
 
 header {
   /*flex: 3;*/
-  margin: 218px 0 0 0;
+  margin: 250px 0 0 -10px;
   width: auto;
 }
 
@@ -74,9 +75,10 @@ h1 {
   padding: 0 0 0 0px;
   text-shadow: 0px 1px 1px white;
   width: 70%;
-  height: 145px;
+  height: 140px;
   font-family: 'marchand';
   font-style: italic;
+  font-weight: lighter;
 }
 
 h2 {
@@ -150,13 +152,14 @@ aside ul li:hover, aside ul li:focus, aside ul li:active {
   background-color: black;
   font-size: 1.4em;
   font-family: 'sail';
+  font-weight: lighter;
 }
 
 
 /*après le clic */
 
 .burger-shower:checked ~ .burger-menu {
- height: 80px;
+ height: 65px;
  width: 100%;
  padding: 0px;
  margin: 0px;
@@ -173,18 +176,127 @@ aside ul li:hover, aside ul li:focus, aside ul li:active {
   height: auto;
   align-items: stretch;
   margin: 0;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 .burger-menu div:hover {
   border-top: 3px solid #E10117;
   color: #E10117;
-  padding-top: 26.5px!important;
+  padding-top: 16.5px!important;
 }
 
 .burger-shower:checked ~ .hamburger {
-  bottom : 85px;
+  bottom : 65px;
   position: absolute;
   text-align: center;
   transition: 1s;
+}
+
+
+
+
+
+
+
+/* ==========================================================================
+   Mise en forme TABLETTE
+
+   ========================================================================== */
+
+
+@media (min-width: 600px)  {
+
+
+  html {
+    background: url(../img/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+   }
+
+  /*mise en page header */
+  header {
+    margin: 0px;
+  }
+
+  h1 {
+    text-shadow: 0px 1px 0.5px white;
+  }
+  h2 {
+    display: block;
+    /*font-family: arial, 'sail';*/
+    /*letter-spacing: -3px;*/
+    line-height: 25px;
+    /*border: 1px solid red;*/
+    color: black;
+    font-weight: lighter;
+    font-size: 30px;
+    /*width: 80%;*/
+    /*min-width: 100px;*/
+    max-width: 395px;
+    margin: 5px 0 0 90px;
+    /*padding-top: 10px;*/
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 0 0 5px 12px;
+    text-shadow: 1px 1px 2px white;
+    font-family: 'sail';
+    font-family: arial;
+    letter-spacing: -1px;
+  }
+
+  /*mise en page la partie we are social*/
+  aside ul {
+    /*border: 1px solid red;*/
+    display: flex;
+    border: none;
+    width: 90%;
+    margin: 0px;
+    /*justify-content: flex-end;*/
+    align-items: flex-end;
+    flex-direction: column;
+  }
+
+  aside ul li {
+    width: 20px;
+    border: 2px solid white; /*#514f4f;*/
+  }
+
+  aside ul li:hover, aside ul li:focus {
+    color: white;
+  }
+}
+
+
+
+/* ==========================================================================
+   Mise en forme ordi
+
+   ========================================================================== */
+
+
+@media (min-width:900px) {
+
+
+  /*header qui change seulement*/
+  header * {
+    color: white;
+  }
+
+  h1 {
+    font-size: 220px;
+    margin-bottom: 60px;
+  }
+
+  h2{
+    text-shadow: 1px 1px 2px black;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    margin: 8px 0 0 120px;
+    padding-top: 5px;
+  }
+
+
 }

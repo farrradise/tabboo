@@ -1,0 +1,189 @@
+
+/* ==========================================================================
+   Mise en forme générale MOBILE FIRST
+
+
+   CODE COULEUR :
+   Rouge : #E10117
+   blanc
+   noir
+   Gris foncé : #7B7A7A7
+
+   ========================================================================== */
+
+
+   @font-face {
+   	font-family: "ombeline";
+   	src: url('../font/ombeline/Ombeline.ttf');
+   }
+
+   @font-face {
+   	font-family: "marchand";
+   	font-style: italic;
+   	src: url('../font/marchand/Marchand_Italic.ttf');
+   }
+
+   @font-face {
+    font-family: "marchand";
+    src: url('../font/marchand/Marchand.ttf');
+   }
+
+
+  html {
+     background: url(../img/background.jpg) no-repeat center center fixed;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+  }
+
+  body {
+    color : black;
+    display: flex;
+    flex-direction : column;
+    min-height: cover;
+  }
+
+  a {
+     color: inherit;
+     text-decoration: none;
+   }
+
+  li {
+     color: inherit;
+     list-style: none;
+   }
+
+
+  /* ==========================================================================
+     Mise en forme header
+     ========================================================================== */
+
+header {
+  /*flex: 3;*/
+  margin: 218px 0 0 0;
+  width: auto;
+}
+
+
+
+h1 {
+  font-size : 10rem;
+  margin: 0px 20px 0px 10px;
+  padding: 0 0 0 0px;
+  text-shadow: 0px 1px 1px white;
+  width: 70%;
+  height: 145px;
+  font-family: 'marchand';
+  font-style: italic;
+}
+
+h2 {
+  font-family: arial;
+  display: none;
+}
+
+
+  /* ==========================================================================
+     Mise en forme aside
+     ========================================================================== */
+
+aside ul {
+  display: flex;
+  width: 35%;
+  min-width: 140px;
+  justify-content:flex-end;
+  margin: 4px 0 0 90px;
+  border-top: 3px solid black;
+}
+
+aside ul li{
+  display: inline-block;
+  min-width: 18px;
+  text-align: center;
+  margin: 5px 3px;
+  /*border: 1px solid red;*/
+  background-color: black;
+  padding: 5px;
+  border-radius: 15px;
+  color: white;
+}
+
+aside ul li:hover, aside ul li:focus, aside ul li:active {
+  background-color: #E10117;
+  color: black;
+}
+
+
+  /* ==========================================================================
+     Mise en forme nav
+     ========================================================================== */
+
+/*avant le clic*/
+.burger-shower {
+ display: none;
+}
+
+.burger-menu div {
+  display: none;
+  height: 0px;
+}
+
+.hamburger {
+  display: flex;
+  position: absolute;
+  justify-content: center!important;
+  margin: auto;
+  bottom: 5px;
+  width: 100%;
+}
+
+.hamburger i {
+  font-size: 2.5em;
+}
+
+.burger-menu {
+  height: 1px;
+  position: absolute;
+  bottom: 0px;
+  background-color: black;
+  font-size: 1.4em;
+  font-family: 'sail';
+}
+
+
+/*après le clic */
+
+.burger-shower:checked ~ .burger-menu {
+ height: 80px;
+ width: 100%;
+ padding: 0px;
+ margin: 0px;
+ text-align: center;
+ color: white;
+ transition: 1s;
+ display: flex;
+ justify-content: space-around;
+ font-weight: bold;
+}
+
+.burger-shower:checked ~ .burger-menu div {
+  display: block;
+  height: auto;
+  align-items: stretch;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.burger-menu div:hover {
+  border-top: 3px solid #E10117;
+  color: #E10117;
+  padding-top: 26.5px!important;
+}
+
+.burger-shower:checked ~ .hamburger {
+  bottom : 85px;
+  position: absolute;
+  text-align: center;
+  transition: 1s;
+}

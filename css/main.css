@@ -129,6 +129,7 @@ h2, #burger-shower {
 	background-color: black;
 	color: white;
 	flex-direction: column;
+	border-bottom: 2px solid black;
 }
 
 .burger-shower:checked ~ .burger-menu div {

@@ -22,6 +22,7 @@
 
 body {
   margin: 0;
+	background-color: black;
 }
 
 a {
@@ -56,27 +57,103 @@ header {
 
 
 h1 {
-  font-size : 4.5rem;
+  font-size : 5.5rem;
   margin:0 auto 0 5px;
   color: white;
-  /*padding: 0 0 0 0px;*/
-  /*text-shadow: 0px 1px 1px white;*/
-  /*width: 100%;*/
   line-height: 60px;
-  /*border: 1px solid red;*/
   font-family: 'marchand';
   font-style: italic;
   font-weight: lighter;
 }
 
-h2, .burger-menu, #burger-shower {
+h2, #burger-shower {
   display: none;
 }
 
+
+
+/*mise en page menu déroulant */
+
+
+		/*avant le clic*/
+
 .hamburger {
-  /*border: 1px solid white;*/
   color: white;
   margin-right: 20px;
   font-size: 2em;
-  /*margin-left: auto;*/
+	display: flex;
+	position: relative;
+	width: auto;
+	border: 1px solid red;
 }
+
+/*.burger-menu div {
+  display: none;
+  height: 0px;
+}*/
+.burger-menu div {
+  display: block;
+  height: 0px;
+	background-color: black;
+	width: 100%;
+}
+
+.burger-menu div a {
+	display: none;
+	opacity: 0;
+}
+
+.burger-menu {
+  height: 0px;
+  position: absolute;
+  top: 65px;
+	text-align: center;
+  background-color: black;
+	/*display: block;*/
+  /*font-size: 1.4em;*/
+  /*font-family: 'sail';*/
+  /*font-weight: lighter;*/
+}
+
+		/*après le clic */
+.burger-shower:checked ~ .burger-menu {
+	height: auto;
+	display: flex;
+	min-width: 100%;
+	/*margin: 0;*/
+	/*padding: 0;*/
+	transition: 1s;
+	position: absolute;
+	top: 68px;
+	right: 0;
+	background-color: black;
+	color: white;
+	flex-direction: column;
+}
+
+.burger-shower:checked ~ .burger-menu div {
+  display: block;
+  /*line-height: 20px;*/
+  /*align-items: stretch;*/
+  margin: 9px 0 0 0;
+	padding: 0;
+	width: 100%;
+	height: 30px;
+	/*color: white;*/
+	transition: 1s;
+}
+
+.burger-shower:checked ~ .burger-menu div a {
+	display: block;
+	opacity: 1;
+	font-weight: lighter;
+	transition: 3s;
+	/*margin: 3px 0 0 0;*/
+	font-family: 'marchand';
+	font-size: 3rem;
+	/*font-weight: bold;*/
+	line-height: 30px;
+}
+/*mise en page du aside ---------------------------------------*/
+
+aside

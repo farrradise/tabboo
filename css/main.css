@@ -538,12 +538,14 @@ footer p a{
 	}
 
 
-
-	/*mise en page de la partie contact ------------------------*/
+	/*mise en page général de la main partie ----------------*/
 
 	.contact {
 		max-width: 700px;
 	}
+	/*mise en page de la partie contact ------------------------*/
+
+
 
 	.contact section {
 		margin-bottom: 15px;

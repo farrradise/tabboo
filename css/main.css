@@ -403,10 +403,13 @@ main * {
 	margin-top: 9px;
 }
 
+.contact > section:last-of-type {
+	width: 90%;
+}
 .contact > section:last-of-type  h2 {
-	position: relative;
-	left: -40px;
-	margin : 20px 0px;
+	/*position: absolute;*/
+	/*left: 5px;*/
+	margin : 20px 0px 5px 0;
 }
 
 .contact > section:last-of-type ul {

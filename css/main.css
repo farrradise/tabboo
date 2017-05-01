@@ -319,8 +319,6 @@ main * {
 .contact {
 	width: 90%;
 	display: flex;
-/*position: relative;*/
-/*top: 100px;*/
 	flex-flow: column;
 	align-items: center;
 	margin: auto;
@@ -359,9 +357,47 @@ main * {
 .contact > section:first-child figure span {
 	font-weight: bolder;
 	border-bottom: 2px solid white;
-	/*margin: 15px 0!important;*/
 	padding-bottom: 2px;
 }
+
+
+
+
+
+			/*mise en page formulaire de contact */
+
+.contact > section:nth-child(2) {
+	width: 90%;
+	margin-top: 10px;
+}
+
+.contact > section form div {
+	width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact > section form input {
+	width: 50%;
+	color: black;
+}
+.contact > section form div select,
+.contact > section form textarea {
+	width: 55%;
+	letter-spacing: 1px;
+	width: 55%;
+}
+
+.contact > section form textarea {
+height: 100px;
+}
+
+.contact form select{
+	color: black;
+}
+
+
+
 
 
 /*mise en page du footer ------------------------------------------*/
@@ -378,15 +414,11 @@ footer nav {
 footer p a{
 	width: 80px;
   text-align: center;
-  /*margin: 5px auto;*/
   background-color: white;
   padding: 5px;
 	font-size: 0.85em;
   border-radius: 15px;
 	font-weight: bolder;
   color: black;
-	/*position: absolute;*/
 	bottom: 10px;
-	/*font-size: 50px;*/
-
 }

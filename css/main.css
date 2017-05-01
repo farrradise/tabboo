@@ -372,6 +372,7 @@ main * {
 
 .contact > section form div {
 	width: 100%;
+	margin-bottom: 5px;
   display: flex;
   justify-content: space-between;
 }
@@ -386,17 +387,40 @@ main * {
 .contact > section form textarea {
 	width: 50%;
 	letter-spacing: 1px;
-}
-
-.contact > section form textarea {
-height: 100px;
-}
-
-.contact form select{
 	color: black;
 }
 
+.contact > section form textarea {
+	height: 100px;
+}
 
+.contact form > input{
+	width: auto!important;
+}
+
+.contact > section:last-of-type div:last-child {
+	height: 120px;
+	margin-top: 9px;
+}
+
+.contact > section:last-of-type  h2 {
+	position: relative;
+	left: -40px;
+	margin : 20px 0px;
+}
+
+.contact > section:last-of-type ul {
+	text-align: center;
+	padding: 0;
+}
+
+iframe {
+	width: 100%;
+	height: 120px;
+	position: absolute;
+	left: 0;
+	border-top: 3px solid white!important;
+}
 
 
 

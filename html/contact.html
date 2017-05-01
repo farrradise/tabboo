@@ -76,7 +76,38 @@
           </div>
         </section>
 
-        <section></section>
+        <section>
+          <h2>Nous écrire</h2>
+          <form action="/action_page.php">
+            <div>
+              <label for="name">Nom</label>
+              <input id="name" type="text">
+            </div>
+
+            <div>
+              <label for="mail">Email</label>
+              <input id="mail" type="email">
+            </div>
+
+            <div>
+              <label for="subject">Sujet</label>
+              <select name="subject" id="subject">
+                <option value="prix">Prix</option>
+                <option value="avis">Retour client</option>
+                <option value="info">Demande d'info</option>
+                <option value="conseil">Conseil</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="message">Message</label>
+              <textarea id="message" name="name" mailrows="8"></textarea>
+            </div>
+
+            <input type="submit" name="envoyer" class="envoyer" value="Envoyer">
+          </form>
+        </section>
+
         <section></section>
 
       </main>

@@ -379,12 +379,13 @@ main * {
 .contact > section form input {
 	width: 50%;
 	color: black;
+	letter-spacing: 1px;
 }
+
 .contact > section form div select,
 .contact > section form textarea {
-	width: 55%;
+	width: 50%;
 	letter-spacing: 1px;
-	width: 55%;
 }
 
 .contact > section form textarea {

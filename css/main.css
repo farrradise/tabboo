@@ -451,6 +451,17 @@ footer p a{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
 /* ==========================================================================
    Mise en forme TABLETTE
 
@@ -460,6 +471,27 @@ footer p a{
 @media (min-width: 600px) {
 
 
+
+
+	/*mise en page de la partie contact ------------------------*/
+
+	.contact > section:first-child {
+		width: 90%;
+	}
+	.contact > section:first-child > div {
+		display: flex;
+		flex-flow: row;
+		/*margin: auto;*/
+		/*max-width: 33%;*/
+		justify-content: space-around;
+		/*align-items: center;*/
+	}
+
+	.contact > section:first-child > div figure {
+		display: flex;
+		flex-direction: column;
+	}
+
 	/*mise en page footer --------------------------------------*/
 	footer nav {
 		display: block;
@@ -467,7 +499,7 @@ footer p a{
 	}
 
 	footer nav ul {
-		padding: 0;
+		/*padding: 0;*/
 		margin: 0 0 3px 0;
 		display: flex;
 		justify-content: flex-end;

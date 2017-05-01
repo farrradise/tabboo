@@ -449,3 +449,34 @@ footer p a{
   color: black;
 	bottom: 10px;
 }
+
+
+/* ==========================================================================
+   Mise en forme TABLETTE
+
+   ========================================================================== */
+
+
+@media (min-width: 600px) {
+
+
+	/*mise en page footer --------------------------------------*/
+	footer nav {
+		display: block;
+		color: white;
+	}
+
+	footer nav ul {
+		padding: 0;
+		margin: 0 0 3px 0;
+		display: flex;
+		justify-content: flex-end;
+		align-items: baseline;
+	}
+
+	footer nav ul li {
+		margin: 0 5px;
+		padding: 0;
+		font-size: 0.8em!important;
+	}
+}

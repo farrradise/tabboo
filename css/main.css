@@ -45,6 +45,7 @@ header {
   /*border-bottom: 2px solid black;*/
   display: flex;
   padding: 0;
+	height: 65px;
   /*border: 3px solid yellow;*/
   background-color: black;
   justify-content: space-between;
@@ -53,11 +54,12 @@ header {
   margin: 0;
   top: 0;
   width: 100%;
+	/*z-index: 4;*/
 }
 
 
 h1 {
-  font-size : 5.5rem;
+  font-size : 5.4rem;
   margin:0 auto 0 5px;
   color: white;
   line-height: 60px;
@@ -106,7 +108,7 @@ h2, #burger-shower {
 .burger-menu {
   height: 0px;
   position: absolute;
-  top: 65px;
+  top: 63px;
 	text-align: center;
   background-color: black;
 	/*display: block;*/
@@ -124,7 +126,7 @@ h2, #burger-shower {
 	/*padding: 0;*/
 	transition: 1s;
 	position: absolute;
-	top: 68px;
+	top: 63px;
 	right: 0;
 	background-color: black;
 	color: white;
@@ -171,7 +173,7 @@ aside ul {
   /*justify-content:flex-end;*/
   /*margin: 4px 0 0 90px;*/
   /*border-top: 3px solid black;*/
-	position: absolute;
+	position: fixed;
 	top: 4px;
 	right: 20%;
 
@@ -194,12 +196,82 @@ aside ul li:hover, aside ul li:focus, aside ul li:active {
 }
 
 
+/*mise en page main : commun à toutes les pages */
+
+main {
+	margin-top: 90px;
+}
+
+main * {
+	margin : 0;
+}
+
+
+.carousel img {
+  display: inline;
+	/*margin: 0;*/
+}
+
+.carousel, .carousel img, .gallery div {
+	/*margin: 0;*/
+	/*padding: 0;*/
+}
+
+.carousel {
+	position: relative;
+	width: 175px;
+	height: 170px;
+	margin:  0;
+	overflow: hidden;
+  /*top : 3em;*/
+  right : 0;
+}
+
+.carousel .carouselslide {
+  left: 0px;
+	position: relative;
+	width: 530px;
+	margin: 0;
+	padding: 0;
+
+	/*CSS3 keyframes animation*/
+	animation-name: AutoSlide;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes AutoSlide {
+	0%, 15%, 100% {
+		left: 0px; /*1ère image*/
+	}
+	35%, 50% {
+		left: -100%; /*2ème image*/
+	}
+	70%, 85% {
+		left: -200%; /*3ème image*/
+	}
+}
+
+/*#slideshow:hover {
+  box-shadow: 2px 3px 7px rgb(89,79,79);
+  transform: scale(1.1);
+  transition: 1s;
+}*/
+
+
+
 /*mise en page du footer ------------------------------------------*/
 
 footer p {
 	display: flex;
 	justify-content: center;
 }
+
+footer nav {
+	display: none;
+}
+
 footer p a{
 	width: 80px;
   text-align: center;
@@ -210,8 +282,8 @@ footer p a{
   border-radius: 15px;
 	font-weight: bolder;
   color: black;
-	position: absolute;
-	bottom: 5px;
+	/*position: absolute;*/
+	bottom: 10px;
 	/*font-size: 50px;*/
 
 }

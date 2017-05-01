@@ -94,10 +94,6 @@ h2, #burger-shower {
 	width: auto;
 }
 
-/*.burger-menu div {
-  display: none;
-  height: 0px;
-}*/
 .burger-menu div {
   display: block;
   height: 0px;
@@ -116,10 +112,6 @@ h2, #burger-shower {
   top: 63px;
 	text-align: center;
   background-color: black;
-	/*display: block;*/
-  /*font-size: 1.4em;*/
-  /*font-family: 'sail';*/
-  /*font-weight: lighter;*/
 }
 
 		/*après le clic */
@@ -127,8 +119,6 @@ h2, #burger-shower {
 	height: auto;
 	display: flex;
 	min-width: 100%;
-	/*margin: 0;*/
-	/*padding: 0;*/
 	transition: 1s;
 	position: absolute;
 	top: 63px;
@@ -142,13 +132,10 @@ h2, #burger-shower {
 
 .burger-shower:checked ~ .burger-menu div {
   display: block;
-  /*line-height: 20px;*/
-  /*align-items: stretch;*/
   margin: 9px 0 0 0;
 	padding: 0;
 	width: 100%;
 	height: 30px;
-	/*color: white;*/
 	transition: 1s;
 }
 
@@ -157,8 +144,6 @@ h2, #burger-shower {
 	opacity: 1;
 	font-weight: lighter;
 	transition: 0.5s;
-	/*margin: 3px 0 0 0;*/
-	/*font-family: arial;*/
 	font-size: 1.6rem;
 	letter-spacing: -2px;
 	line-height: 38px;
@@ -174,10 +159,6 @@ h2, #burger-shower {
 aside ul {
   display: flex;
   width: 35%;
-  /*min-width: 140px;*/
-  /*justify-content:flex-end;*/
-  /*margin: 4px 0 0 90px;*/
-  /*border-top: 3px solid black;*/
 	position: fixed;
 	top: 4px;
 	right: 20%;
@@ -441,11 +422,10 @@ footer nav {
 footer p a{
 	width: 80px;
   text-align: center;
-  background-color: white;
+	background-color: white;
   padding: 5px;
 	font-size: 0.85em;
   border-radius: 15px;
-	font-weight: bolder;
   color: black;
 	bottom: 10px;
 }
@@ -495,7 +475,7 @@ footer p a{
 	/*mise en page footer --------------------------------------*/
 	footer nav {
 		display: block;
-		color: white;
+		color: #514f4f;
 	}
 
 	footer nav ul {
@@ -511,4 +491,64 @@ footer p a{
 		padding: 0;
 		font-size: 0.8em!important;
 	}
+}
+
+
+
+
+
+/* ==========================================================================
+   Mise en forme ORDINATEUR
+
+   ========================================================================== */
+
+
+@media (min-width: 900px) {
+
+	/*mise en page header  ------------------------*/
+
+	header h2 {
+		display: inline-block;
+		color: #514f4f;
+    /*#383434;*/
+		font-weight: lighter;
+		letter-spacing: -2px!important;
+	}
+
+	header h1 {
+		display: inline-block;
+		margin-right: 30px;
+	}
+
+
+
+	/*mise en page aside ------------------------*/
+	.social ul {
+		display: flex;
+		width: auto;
+		height: 150px;
+		flex-flow: column;
+		position: fixed;
+		right: 10px;
+		top: 150px;
+	}
+
+	.social li {
+		width: 15px;
+	}
+
+
+
+	/*mise en page de la partie contact ------------------------*/
+
+	.contact {
+		max-width: 700px;
+	}
+
+	.contact section {
+		margin-bottom: 15px;
+		padding-top: 15px;
+		border-top: 2px solid white!important;
+	}
+
 }

@@ -262,25 +262,16 @@ main * {
 .gallery > div > div, .gallery > div:last-of-type, .gallery > div:first-of-type > figure, .gallery > figure{
 	display: flex;
 	justify-content: center;
-	/*justify-content: space-around;*/
-	/*width: 80%;*/
-	/*border: 1px solid red;*/
 	margin: 2px;
 }
 
-.gallery > div > div > figure, .gallery > div:last-of-type figure{
-	/*flex: 100;*/
-	/*flex:1;*/
-}
 
 .gallery > figure, .gallery > div:first-child > figure {
-	min-width: 350px!important;
-	/*width: 80%;*/
+	width: 350px!important;
 }
 
  .gallery > figure > img, .gallery > div:first-child > figure{
-	min-width: 98%!important;
-	/*border: 4px solid green!important;*/
+	min-width: 98%;
 }
 
 .gallery > div:first-child > figure img {
@@ -555,6 +546,25 @@ footer p a{
 	}
 
 	/*mise en page de la partie gallery ------------------------*/
+	body .gallery {
+		width: 700px;
+		margin: auto;
+		height: 580px;
+		flex-flow: column wrap;
+		align-content: stretch;
+	}
 
+	body .gallery > figure {
+		width: auto;
+		order: 1;
+		margin: 0px;
+		height: 100%;
 
+		max-width: 350px!important;
+	}
+
+	.gallery > div:first-child > figure {
+		width: auto;
+		max-width: 350px;
+	}
 }

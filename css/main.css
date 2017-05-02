@@ -205,25 +205,26 @@ main * {
 /*CAROUSEL ============================================*/
 .carousel img {
   display: inline;
-	/*margin: 0;*/
+	margin: 0 1.5px;
 }
 
 .carousel {
 	position: relative;
-	width: 173px;
+	width: 172px;
 	height: 170px;
 	margin:  0;
 	overflow: hidden;
   /*top : 3em;*/
-	left : 3px;
+	left : -1px;
 }
 
 .carousel .carouselslide {
-  left: 2px;
+  left: 0px;
 	position: relative;
 	width: 525px;
-	margin: 0;
+	margin: 0 2px;
 	padding: 0;
+	display: flex;
 	/*CSS3 keyframes animation*/
 	animation-name: AutoSlide;
 	animation-duration: 12s;
@@ -540,7 +541,7 @@ footer p a{
 
 	/*mise en page général de la main partie ----------------*/
 
-	.contact {
+	body >.contact {
 		max-width: 700px;
 	}
 	/*mise en page de la partie contact ------------------------*/
@@ -552,5 +553,8 @@ footer p a{
 		padding-top: 15px;
 		border-top: 2px solid white!important;
 	}
+
+	/*mise en page de la partie gallery ------------------------*/
+
 
 }

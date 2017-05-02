@@ -301,6 +301,44 @@ main * {
 	margin-top: 2px;
 }
 
+
+/*mise en page du blog ------------------------------------------*/
+
+.blog {
+	color: white;
+	margin: auto 10px;
+}
+.blog section h2 {
+	display: block;
+	font-weight: lighter;
+	margin: 15px 0;
+}
+.blog input {
+	color: black;
+}
+
+.blog section:first-child img {
+	max-width: 20%;
+	min-width: 100px;
+	float: right;
+	max-height: 200px;
+}
+
+.blog section:nth-of-type(2) {
+	clear: both;
+}
+
+.bloggallery h2 {
+	width: 100%;
+}
+
+.bloggallery figure {
+	width: 33%;
+}
+.bloggallery div{
+	display: flex;
+}
+
 /*mise en page du footer ------------------------------------------*/
 
 footer p {

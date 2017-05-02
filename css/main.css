@@ -540,7 +540,7 @@ footer p a{
 		margin-right: 30px;
 	}
 
-	/*header #burger-shower, header .hamburger {
+	header #burger-shower, header .hamburger {
 		display: none;
 	}
 
@@ -548,10 +548,28 @@ footer p a{
 		display: flex;
 		width: 50%;
 		height: 50px;
+		position: fixed;
+		right: 0px;
+		top: 35px;
 		background-color: white;
 		flex-flow: row nowrap;
-	}*/
+	}
 
+	header .burger-menu div {
+		height: 50px;
+	}
+
+	header .burger-menu a {
+		opacity: 1;
+		display: inline-block;
+		position: fixed;
+		color: white!important;
+	}
+
+	header .burger-menu a:hover {
+	background-color: black;
+	}
+	
 	/*mise en page aside ------------------------*/
 	.social ul {
 		display: flex;
